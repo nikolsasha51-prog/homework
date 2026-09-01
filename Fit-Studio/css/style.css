@@ -3,20 +3,7 @@ article {
   padding-top: 80px;
   margin-bottom: 120px;
 }
-.article-title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
 
-  line-height: 115%;
-  text-transform: uppercase;
-  color: #2c332f;
-  margin-bottom: 40px;
-  max-width: 596px;
-}
-
-.article-large {
-  font-size: 48px;
-}
 
 .title-2nd {
   font-size: 36px;

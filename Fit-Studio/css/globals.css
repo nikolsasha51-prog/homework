@@ -15,12 +15,36 @@ body {
   min-height: 100vh;
 }
 
-
 h1,
 h2,
 h3,
 p {
   margin: 0;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+
+.button {
+  display: inline-block;
+  padding: 19px 32px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #3596ed;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  opacity: 0.75;
 }
 
 .container {
@@ -30,5 +54,30 @@ p {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.title-large {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  margin-bottom: 40px;
+  max-width: 596px;
+  font-size: 48px;
+}
+
+.section {
+  margin-bottom: 140px;
+}
+
+.text-sub {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-align: right;
+  text-transform: uppercase;
+  color: #858e8a;
 }
