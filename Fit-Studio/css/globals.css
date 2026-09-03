@@ -40,11 +40,13 @@ p {
   text-transform: uppercase;
   color: #fff;
   background-color: #3596ed;
-  transition: opacity 0.2s;
+  transition:
+    opacity 0.2s,
+    background-color 0.2s;
 }
 
 .button:hover {
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .container {
@@ -55,6 +57,24 @@ p {
 
 a {
   text-decoration: none;
+}
+
+a,
+button {
+  outline: none;
+}
+
+.button:not(:disabled):active {
+  background-color: #1a66a8;
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+a:active {
+  background-color: #1a66a8;
 }
 
 .title-large {
@@ -73,6 +93,15 @@ a {
   margin-bottom: 140px;
 }
 
+.title-medium {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
 .text-sub {
   font-weight: 300;
   font-size: 14px;
@@ -80,4 +109,10 @@ a {
   text-align: right;
   text-transform: uppercase;
   color: #858e8a;
+}
+
+a:focus-visible,
+button:focus-visible, 
+summary:focus-visible {
+  outline: 2px solid #3596ed;
 }

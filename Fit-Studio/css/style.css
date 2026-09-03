@@ -1,9 +1,7 @@
-
 article {
   padding-top: 80px;
   margin-bottom: 120px;
 }
-
 
 .title-2nd {
   font-size: 36px;
@@ -16,7 +14,9 @@ article {
   color: #535755;
   margin-bottom: 20px;
 }
-.article-text:last-child {margin: 0;}
+.article-text:last-child {
+  margin: 0;
+}
 
 .article-mb-1 {
   margin-bottom: 80px;
@@ -61,6 +61,17 @@ article {
   position: absolute;
   left: 580px;
   top: 226px;
+  transition:
+    opacity 0.2s,
+    background-color 0.2s;
+}
+
+.article-play-button:hover {
+  background-color: #3b7eb8;
+}
+
+.article-play-button:not(:disabled):active {
+  background-color: #1a66a8;
 }
 
 .article-img {
